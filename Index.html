@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khyati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="logo">KHYATI</div>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero Slider-->
+    <div class="slider-container" id="home">
+        <!--Slide 1-->
+        <div class="slide active">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Hi, I'm Khyati Verma</h1>
+                    <p>
+                        Software Developer and Full Stack Developer passionate about building
+                        responsive, scalable, and user-friendly web applications using modern
+                        technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="cta-button">
+                            View My Projects
+                        </a>
+
+                        <a href="./Khyati_Verma_Resume.pdf" class="resume-btn" download="Khyati_Verma_Resume.pdf">
+                            Download Resume ↓
+                        </a>
+                    </div>
+                </div>
+                <div class="slide-image">
+                    <div class="slide-wrapper">
+                        <div class="slideoverlay">01</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide 2-->
+        <div class="slide ">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Building Ideas Into Applications</h1>
+                    <p>
+                        I enjoy turning ideas into functional digital products using
+                        JavaScript, React.js, Node.js, Python, databases, and modern web
+                        development practices.
+                    </p>
+                    <a href="#skills" class="cta-button">Explore My Skills</a>
+                </div>
+                <div class="slide-image">
+                    <div class="slide-wrapper">
+                        <div class="slideoverlay">02</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Slide 3-->
+        <div class="slide">
+            <div class="slide-content">
+                <div class="slide-text">
+                    <h1>Code. Create. Improve.</h1>
+                    <p>
+                        I continuously learn new technologies, solve programming problems,
+                        and build projects that strengthen my skills in software development
+                        and full stack engineering.
+                    </p>
+                    <a href="#contact" class="cta-button">Let's Connect</a>
+                </div>
+                <div class="slide-image">
+                    <div class="slide-wrapper">
+                        <div class="slideoverlay">03</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="control-btn" onclick="prevSlide()">←</button>
+            <button class="control-btn" onclick="nextSlide()">→</button>
+        </div>
+        <div class="slider-indicators">
+            <div class="indicator active" onclick="goToSlide(0)"></div>
+            <div class="indicator" onclick="goToSlide(1)"></div>
+            <div class="indicator" onclick="goToSlide(2)"></div>
+        </div>
+    </div>
+
+
+    <!--Features Section-->
+    <section class="features" id="services">
+        <h2 class="section-title">What I do</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✦</div>
+                <h3>Frontend Development</h3>
+                <p>
+                    Building responsive and interactive user interfaces using
+                    HTML, CSS, JavaScript, React.js, Tailwind CSS, and modern
+                    frontend development practices.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">◆</div>
+                <h3>Backend Development</h3>
+                <p>
+                    Developing REST APIs and server-side applications using
+                    Node.js, Express.js, Python, and database technologies.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">●</div>
+                <h3>Database & Problem Solving</h3>
+                <p>
+                    Working with MongoDB, SQL, DBMS, OOPs, and data structures
+                    while applying problem-solving skills to real-world projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--About Section-->
+    <section class="about" id="about">
+        <div class="about-container">
+
+            <div class="about-image">
+                <div class="about-img-wrapper">
+                    <div class="about-overlay">KHYATI</div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="about-label">About Me</span>
+                <h2>Building Digital Solutions With Code & Creativity</h2>
+                <p>
+                    I am a Computer Science and Engineering graduate with a strong
+                    interest in software development and full stack web development.
+                    I enjoy building practical applications that combine clean
+                    interfaces, reliable backend systems, and efficient databases.
+                </p>
+                <p>
+                    My technical experience includes JavaScript, React.js, Node.js,
+                    Express.js, Python, MongoDB, SQL, HTML, CSS, Git, and GitHub.
+                    I am continuously improving my problem-solving and development
+                    skills by building projects and learning modern technologies.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Projects Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>Technologies</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2+</h3>
+                        <p>Internship Experiences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Process Section-->
+    <section class="process">
+        <h2 class="section-title dark">My Development Approach</h2>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <h3>Understand</h3>
+                <p>
+                    Understand the problem, requirements, users, and expected outcome
+                    before starting development.
+                </p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <h3>Plan</h3>
+                <p>
+                    Break the problem into smaller components and decide the appropriate
+                    technologies, architecture, and development approach.
+                </p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <h3>Design</h3>
+                <p>
+                    Create clean and responsive interfaces focused on usability,
+                    accessibility, and user experience.
+                </p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <h3>Develop</h3>
+                <p>
+                    Build frontend interfaces, backend APIs, database functionality,
+                    authentication, and application logic.
+                </p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">05</div>
+                <h3>Test</h3>
+                <p>
+                    Test functionality, responsiveness, API integration, and user
+                    interactions to identify and fix issues.
+                </p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">06</div>
+                <h3>Improve</h3>
+                <p>
+                    Refactor code, improve performance, add features, and continuously
+                    learn better development practices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="portfolio" id="projects">
+        <span class="about-label project-label">MY WORK</span>
+        <h2 class="section-title dark">Featured Projects</h2>
+
+        <p class="projects-intro">
+            A collection of applications I've built while exploring
+            full-stack development, Python, and modern web technologies.
+        </p>
+
+        <div class="portfolio-grid">
+
+            <!-- Project 1: CraveBite -->
+            <div class="portfolio-item">
+                <div class="portfolio-image project-cravebite">
+                    <div class="project-number">01</div>
+
+                    <div class="portfolio-overlay">
+                        <span class="project-type">Django Web Application</span>
+                        <h3>CraveBite</h3>
+                        <p>
+                            A food canteen website featuring food categories
+                            and an engaging interface, built using Django
+                            and database integration.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                        </div>
+
+                        <a href="https://github.com/KhyatiVerma-06/CraveBite---Canteen-Ordering-Platform"
+                            class="project-link">
+                            View Project ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: ScholarSync -->
+            <div class="portfolio-item">
+                <div class="portfolio-image project-scholarsync">
+                    <div class="project-number">02</div>
+
+                    <div class="portfolio-overlay">
+                        <span class="project-type">Full Stack Application</span>
+                        <h3>ScholarSync</h3>
+                        <p>
+                            A student management system with a responsive
+                            interface, backend APIs, and database integration
+                            for managing student-related information.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+
+                        <a href="https://github.com/KhyatiVerma-06/ScholarSync" class="project-link">
+                            View Project ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Pixora -->
+            <div class="portfolio-item">
+                <div class="portfolio-image project-pixora">
+                    <div class="project-number">03</div>
+
+                    <div class="portfolio-overlay">
+                        <span class="project-type">Full Stack Web Application</span>
+                        <h3>Pixora</h3>
+                        <p>
+                            An image upload and preview application designed
+                            to provide a clean, responsive, and interactive
+                            user experience.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <a href="https://github.com/KhyatiVerma-06/Pixora" class="project-link" target="_blank"
+                            rel="noopener noreferrer">
+                            View Project ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Netflix Clone -->
+            <div class="portfolio-item">
+                <div class="portfolio-image project-netflix">
+                    <div class="project-number">04</div>
+
+                    <div class="portfolio-overlay">
+                        <span class="project-type">Frontend Web Application</span>
+                        <h3>Netflix Clone</h3>
+                        <p>
+                            A Netflix-inspired streaming interface designed
+                            to recreate a modern entertainment browsing
+                            experience with responsive layouts.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://github.com/KhyatiVerma-06/Netflix-Clone-React" class="project-link"
+                            target="_blank" rel="noopener noreferrer">
+                            View Project ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Jarvis AI -->
+            <div class="portfolio-item">
+                <div class="portfolio-image project-jarvis">
+                    <div class="project-number">05</div>
+
+                    <div class="portfolio-overlay">
+                        <span class="project-type">Python AI Application</span>
+                        <h3>Jarvis AI</h3>
+                        <p>
+                            A voice assistant built with Python, integrating
+                            speech recognition and the OpenAI API to support
+                            voice-based interactions.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>Speech Recognition</span>
+                        </div>
+
+                        <a href="https://github.com/KhyatiVerma-06/JarvisAI" class="project-link" target="_blank"
+                            rel="noopener noreferrer">
+                            View Project ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6: Modern Blog Platform -->
+            <div class="portfolio-item">
+                <div class="portfolio-image project-blog">
+                    <div class="project-number">06</div>
+
+                    <div class="portfolio-overlay">
+                        <span class="project-type">Web Application</span>
+                        <h3>Modern Blog Platform</h3>
+                        <p>
+                            A responsive blog platform featuring interactive
+                            posts, categories, search, comments, and
+                            dark-mode styling.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                        </div>
+
+                        <a href="https://github.com/KhyatiVerma-06/Modern-Blog-Platform" class="project-link"
+                            target="_blank" rel="noopener noreferrer">
+                            View Project ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="technical-skills" id="skills">
+        <div class="skills-container">
+
+            <h2 class="section-title">Technical Skills</h2>
+
+            <p class="skills-intro">
+                Technologies and tools I use to build responsive,
+                functional, and user-friendly web applications.
+            </p>
+
+            <div class="skills-grid">
+
+                <!-- Frontend Skills -->
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="skill-card">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database Management</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-card">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Postman</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <!-- Core Concepts -->
+                <div class="skill-card">
+                    <div class="skill-icon">🧠</div>
+                    <h3>Core CS Concepts</h3>
+                    <div class="skill-tags">
+                        <span>Data Structures</span>
+                        <span>OOP</span>
+                        <span>DBMS</span>
+                        <span>Operating Systems</span>
+                        <span>Computer Networks</span>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span>C</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Stats Section-->
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+
+            <div class="stat-box">
+                <h2>6+</h2>
+                <p>Projects Built</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>5+</h2>
+                <p>Technologies Used</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>2026</h2>
+                <p>B.Tech Graduate</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>4+</h2>
+                <p>Certifications Earned</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Certifications Section -->
+    <section class="certifications-section" id="certifications">
+        <div class="certifications-container">
+
+            <span class="certifications-label">PROFESSIONAL DEVELOPMENT</span>
+
+            <h2 class="section-title dark">
+                Certifications &amp; Credentials
+            </h2>
+
+            <p class="certifications-intro">
+                Certifications and learning experiences that reflect my
+                commitment to developing my technical skills.
+            </p>
+
+            <div class="certifications-grid">
+
+                <!-- Certification 1 -->
+                <div class="certification-card">
+                    <div class="certification-icon">OCI</div>
+
+                    <span class="certification-type">GENERATIVE AI</span>
+
+                    <h3>Oracle Cloud Infrastructure 2025 Generative AI Professional</h3>
+
+                    <p class="certification-issuer">Oracle</p>
+
+                    <a href="https://drive.google.com/file/d/1JgMcp7_U0yXWTBSk0FEPKl7dixC_LYQq/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate <span>↗</span>
+                    </a>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="certification-card">
+                    <div class="certification-icon">PY</div>
+
+                    <span class="certification-type">PROGRAMMING</span>
+
+                    <h3>Python Essentials 1</h3>
+
+                    <p class="certification-issuer">
+                        Cisco Networking Academy
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/16jy6kZk7S20n5N4eudt8e75ynjSmwHSn/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate <span>↗</span>
+                    </a>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="certification-card">
+                    <div class="certification-icon">D</div>
+
+                    <span class="certification-type">JOB SIMULATION</span>
+
+                    <h3>Technology Job Simulation</h3>
+
+                    <p class="certification-issuer">Deloitte · Forage</p>
+
+                    <a href="https://drive.google.com/file/d/1N2vuKEKqOjQSpSY1eLXFhVRxxLMWW9Bw/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate <span>↗</span>
+                    </a>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="certification-card">
+                    <div class="certification-icon">TA</div>
+
+                    <span class="certification-type">DATA ANALYTICS</span>
+
+                    <h3>GenAI Powered Data Analytics Job Simulation</h3>
+
+                    <p class="certification-issuer">Tata · Forage</p>
+
+                    <a href="https://drive.google.com/file/d/11yL0iXyRN70B9tsV-1zH7IiJFCawngQN/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate <span>↗</span>
+                    </a>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="certification-card">
+                    <div class="certification-icon">HR</div>
+
+                    <span class="certification-type">PYTHON PROGRAMMING</span>
+
+                    <h3>Basics of Python</h3>
+
+                    <p class="certification-issuer">HackerRank</p>
+
+                    <a href="https://drive.google.com/file/d/1Ulsrpb9-jANSe0_N665Cr2UwD9t3zIL9/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate <span>↗</span>
+                    </a>
+                </div>
+                <!-- Certification 6 -->
+                <!-- Certification 6: TCS iON -->
+                <div class="certification-card">
+                    <div class="certification-icon">TCS</div>
+
+                    <span class="certification-type">PROFESSIONAL DEVELOPMENT</span>
+
+                    <h3>TCS iON Career Edge – Young Professional</h3>
+
+                    <p class="certification-issuer">
+                        Tata Consultancy Services (TCS iON)
+                    </p>
+
+                    <a href="https://drive.google.com/file/d/1b7XsqwrlH5D7u-_Ompvaw-KdtRfg_fDX/view?usp=drive_link"
+                        class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate <span>↗</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Let's Connect & Build Something Great</h2>
+
+                <p>
+                    Have a project idea, a job opportunity, or want to
+                    collaborate? I'd love to hear from you. Feel free
+                    to reach out!
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-items">
+                        <h4>Email</h4>
+                        <p>
+                            <a href="mailto:khyativerma16@gmail.com" class="contact-link">
+                                khyativerma16@gmail.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="contact-items">
+                        <h4>Phone</h4>
+                        <p>
+                            <a href="tel:+918941923060" class="contact-link">
+                                +91 89419 23060 ↗
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contact-items">
+                        <h4>WhatsApp</h4>
+                        <p>
+                            <a href="https://wa.me/918941923060?text=Hi%20Khyati%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                                class="whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                                <span>Chat on WhatsApp ↗</span>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="contact-items">
+                        <h4>Location</h4>
+                        <p>Gurugram, Haryana, India</p>
+                    </div>
+
+                    <div class="contact-items">
+                        <h4>Professional Profiles</h4>
+                        <p>
+                            <a href="https://www.linkedin.com/in/khyati-verma-415a1b252/" class="contact-link"
+                                target="_blank" rel="noopener noreferrer">
+                                LinkedIn ↗
+                            </a>
+                            &nbsp; | &nbsp;
+                            <a href="https://github.com/KhyatiVerma-06" class="contact-link" target="_blank"
+                                rel="noopener noreferrer">
+                                GitHub ↗
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-section footer-about">
+                <a href="#home" class="footer-logo">KHYATI<span>.</span></a>
+
+                <h3>Full Stack Developer</h3>
+
+                <p>
+                    Building responsive web applications and turning ideas
+                    into practical digital experiences. Always learning,
+                    building, and improving.
+                </p>
+
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/khyati-verma-415a1b252/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn ↗</a>
+
+                    <a href="https://github.com/KhyatiVerma-06" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Profile">GitHub ↗</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Technical Skills</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Technologies</h4>
+                <ul>
+                    <li><a href="#skills">Frontend Development</a></li>
+                    <li><a href="#skills">Backend Development</a></li>
+                    <li><a href="#skills">Databases</a></li>
+                    <li><a href="#skills">Programming</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-cta">
+                <h4>Let's Connect</h4>
+                <p>
+                    Have an opportunity or a project in mind?
+                    Let's discuss how I can contribute.
+                </p>
+
+                <a href="#contact" class="footer-contact-btn">
+                    Get In Touch ↗
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Khyati Verma. All rights reserved.</p>
+            <a href="#home" class="back-to-top">Back to Top ↑</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

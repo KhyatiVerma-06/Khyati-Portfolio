@@ -1,0 +1,1101 @@
+
+/* ==========================
+   LARGE TABLETS
+========================== */
+
+@media (max-width: 1024px) {
+
+    .slide-content,
+    .about-container,
+    .contact-container {
+        gap: 2rem;
+    }
+
+    .slide-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width:768px) {
+
+    nav {
+        padding: 1rem 5%;
+        position:fixed;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left:auto;
+        z-index:1001;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 20px 0;
+        display: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    .slider-container {
+        min-height: auto;
+        padding-top: 100px;
+    }
+
+    .slide-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .slide-image {
+        height: 350px;
+    }
+
+    .slide-text h1 {
+        font-size: 2.8rem;
+    }
+
+    
+    .about-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media(max-width:768px){
+
+    .slider-navigation{
+        gap:15px;
+        bottom:20px;
+    }
+
+    .control-btn{
+        width:40px;
+        height:40px;
+    }
+
+    .indicator{
+        width:25px;
+    }
+
+    .indicator.active{
+        width:40px;
+    }
+
+    .slider-container{
+        padding-bottom:80px;
+    }
+
+    .slider-controls{
+        bottom:5px;
+    }
+
+    .slider-indicators{
+        bottom:10px;
+    }
+
+}
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:480px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .slider-container {
+        min-height: 100vh;
+    }
+
+    .slide-content {
+        width: 95%;
+    }
+
+    .slide-text h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .slide-text p {
+        font-size: 0.95rem;
+    }
+
+    .slide-image {
+        height: 250px;
+    }
+
+    .slideoverlay {
+        font-size: 4rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-image {
+        height: 250px;
+    }
+
+    .about-overlay {
+        font-size: 3rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .process-grid,
+    .portfolio-grid,
+    .stats-container,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .slider-controls {
+        bottom: -20px;
+        right: 10px;
+    }
+
+    .slider-indicators {
+        bottom: -15px;
+        left: 10px;
+    }
+
+    .control-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .indicator {
+        width: 25px;
+    }
+
+    .indicator.active {
+        width: 40px;
+    }
+
+    section {
+        padding: 4rem 1rem !important;
+    }
+}
+@media (max-width:480px){
+
+    .slider-container{
+        padding-bottom:80px;
+    }
+
+    .slider-controls{
+        bottom:5px;
+    }
+
+    .slider-indicators{
+        bottom:10px;
+    }
+}
+
+/* ==========================
+   SMALL PHONES
+========================== */
+
+@media (max-width:360px) {
+
+    .slide-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .stat-box h2 {
+        font-size: 2rem;
+    }
+
+    .slide-text {
+        width: 100%;
+    }
+
+    .slide-text h1 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Certifications - Responsive Layout */
+@media (max-width: 1024px) {
+    .certifications-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem;
+    }
+
+    .certification-card {
+        padding: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .certifications-section {
+        padding: 5rem 5%;
+    }
+
+    .certifications-grid {
+        margin-top: 2.5rem;
+    }
+
+    .certification-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications-section {
+        padding: 4rem 1rem;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .certification-card {
+        padding: 1.5rem;
+    }
+
+    .certifications-intro {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Cohesive portfolio responsive polish */
+@media (max-width: 1024px) {
+    nav { padding: 1rem 5%; }
+    .slide-content { width: 90%; gap: 2.5rem; }
+    .slide-text h1 { font-size: clamp(2.8rem, 5.2vw, 4rem); }
+    .slide-image { height: 460px; min-height: 320px; }
+    .features-grid { gap: 1rem; }
+    .portfolio-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .skills-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .certifications-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+    nav { padding: .9rem 5%; }
+    .nav-links { background: #faf8f4; border-top: 1px solid rgba(35,31,25,.08); }
+    .slider-container { min-height: 0; height: auto; padding: 115px 0 100px; }
+    .slide { position: relative; inset: auto; display: none; opacity: 1; }
+    .slide.active { display: flex; }
+    .slide-content { grid-template-columns: 1fr; gap: 2rem; width: 88%; text-align: left; }
+    .slide-text h1 { font-size: clamp(2.7rem, 9vw, 4rem); }
+    .slide-text p { font-size: 1rem; margin-bottom: 1.5rem; }
+    .slide-image { height: 320px; min-height: 0; }
+    .slide-wrapper { border-top-right-radius: 55px; }
+    .slider-controls { right: 6%; bottom: 22px; }
+    .slider-indicators { left: 6%; bottom: 42px; }
+    .features-grid, .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .about-container, .contact-container { grid-template-columns: 1fr; gap: 2.5rem; }
+    .about-image { height: 360px; min-height: 0; }
+    .about-stats { gap: 1rem; }
+    .stat-item h3 { font-size: 2.3rem; }
+    .stats-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .footer-content { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+}
+@media (max-width: 480px) {
+    .logo { font-size: 1.35rem; }
+    .slider-container { padding-top: 100px; padding-bottom: 95px; }
+    .slide-content { width: 88%; }
+    .slide-text h1 { font-size: clamp(2.35rem, 11vw, 3rem); }
+    .slide-image { height: 245px; }
+    .slideoverlay { font-size: 4.5rem; }
+    .cta-button { width: auto; max-width: 100%; padding: .95rem 1.3rem; }
+    .features-grid, .process-grid, .portfolio-grid, .skills-grid,
+    .certifications-grid { grid-template-columns: 1fr; }
+    .portfolio-item { aspect-ratio: 1 / 1.05; }
+    .portfolio-overlay { padding: 1.25rem; }
+    .portfolio-overlay p { font-size: .86rem; }
+    .about-image { height: 260px; }
+    .about-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .stat-item h3 { font-size: 1.8rem; }
+    .stat-item p { font-size: .78rem; }
+    .stats-container { gap: .6rem; }
+    .stat-box { padding: .75rem .25rem; }
+    .stat-box h2 { font-size: 2rem; }
+    .stat-box p { font-size: .8rem; }
+    .footer-content { grid-template-columns: 1fr; text-align: left; }
+    .contact-info h2 { font-size: 2.15rem; }
+}
+
+/* ================================================
+   RESPONSIVE RULES MOVED FROM style.css
+   ================================================ */
+
+@media (max-width: 1024px) {
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .projects-intro {
+        font-size: 0.95rem;
+    }
+
+    .portfolio-overlay {
+        transform: translateY(0);
+        padding: 1.5rem;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1.4rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item {
+        aspect-ratio: 1 / 1;
+    }
+
+    .portfolio-overlay {
+        padding: 1.5rem;
+    }
+
+    .project-number {
+        font-size: 3rem;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skill-card,
+    .skill-card::before,
+    .skill-tags span {
+        transition: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .stat-box h2 {
+        font-size: 2.8rem;
+    }
+
+    .stat-box p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-section {
+        padding: 4rem 1rem;
+    }
+
+    .stats-container {
+        gap: 1.75rem 1rem;
+    }
+
+    .stat-box h2 {
+        font-size: 2.2rem;
+    }
+
+    .stat-box p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .certification-card,
+    .certificate-link {
+        transition: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .portfolio-item:hover .portfolio-overlay,
+    .portfolio-item:focus-within .portfolio-overlay {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
+/* ================================================
+   FEATURED WORK — TOUCH / SMALL SCREEN BEHAVIOR
+   ================================================ */
+@media (hover: none), (pointer: coarse) {
+    .portfolio-item .portfolio-overlay {
+        inset: auto 0 0;
+        min-height: 60%;
+        padding: 1.1rem;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 5rem 5%;
+    }
+
+    .portfolio .project-label,
+    .portfolio > .section-title,
+    .portfolio .projects-intro {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .portfolio-item {
+        aspect-ratio: 1 / 1.05;
+    }
+
+    .portfolio-item .portfolio-overlay {
+        padding: 1rem;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+
+    .project-tech {
+        gap: 0.35rem;
+        margin-bottom: 0.6rem;
+    }
+}
+/* =========================================
+   TECHNICAL SKILLS — RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+    .technical-skills {
+        padding: 80px 5%;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .skill-card {
+        padding: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .technical-skills {
+        padding: 60px 5%;
+    }
+
+    .technical-skills .section-title {
+        font-size: clamp(2rem, 8vw, 2.7rem);
+    }
+
+    .skills-intro {
+        font-size: 0.94rem;
+        line-height: 1.75;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 30px;
+    }
+
+    .skill-card {
+        padding: 24px;
+    }
+
+    .skill-icon {
+        width: 46px;
+        height: 46px;
+        margin-bottom: 17px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.12rem;
+        margin-bottom: 16px;
+    }
+
+    .skill-tags {
+        gap: 8px;
+    }
+
+    .skill-tags span {
+        padding: 7px 10px;
+        font-size: 0.78rem;
+    }
+}
+
+/* ==========================================
+   PROJECT SECTION — TABLET & MOBILE FIX
+========================================== */
+
+/* Prevent grid overflow */
+#projects,
+#projects * {
+    box-sizing: border-box;
+}
+
+#projects {
+    overflow: hidden;
+}
+
+#projects .portfolio-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 24px;
+}
+
+#projects .portfolio-item {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+}
+
+#projects .portfolio-image {
+    min-width: 0;
+}
+
+#projects .portfolio-overlay {
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+#projects .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#projects .project-tech span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+#projects .project-link {
+    align-self: flex-start;
+    margin-top: 4px;
+}
+
+/* =========================
+   TABLET — 769px to 1024px
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    #projects {
+        padding: 75px 5%;
+    }
+
+    #projects .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+        margin-top: 38px;
+    }
+
+    #projects .portfolio-item {
+        aspect-ratio: auto;
+        min-height: 420px;
+    }
+
+    #projects .portfolio-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .portfolio-overlay {
+        inset: 0;
+        padding: 22px;
+        justify-content: flex-end;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.98) 0%,
+            rgba(0, 0, 0, 0.85) 60%,
+            rgba(0, 0, 0, 0.25) 100%
+        );
+    }
+
+    #projects .portfolio-overlay h3 {
+        font-size: 1.45rem;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+    #projects .portfolio-overlay p {
+        font-size: 0.88rem;
+        line-height: 1.55;
+        margin-bottom: 14px;
+    }
+
+    #projects .project-type {
+        font-size: 0.68rem;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    #projects .project-tech {
+        margin-bottom: 12px;
+    }
+
+    #projects .project-tech span {
+        padding: 6px 9px;
+        font-size: 0.7rem;
+    }
+}
+
+/* =========================
+   MOBILE — 481px to 768px
+========================= */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    #projects {
+        padding: 65px 5%;
+    }
+
+    #projects .projects-intro {
+        max-width: 540px;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        padding: 0 5px;
+    }
+
+    #projects .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin-top: 32px;
+    }
+
+    #projects .portfolio-item {
+        aspect-ratio: auto;
+        min-height: 400px;
+    }
+
+    #projects .portfolio-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .portfolio-overlay {
+        inset: 0;
+        padding: 16px;
+        justify-content: flex-end;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.98),
+            rgba(0, 0, 0, 0.82) 65%,
+            rgba(0, 0, 0, 0.25)
+        );
+    }
+
+    #projects .portfolio-overlay h3 {
+        font-size: 1.25rem;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    #projects .portfolio-overlay p {
+        font-size: 0.82rem;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    #projects .project-type {
+        font-size: 0.62rem;
+        letter-spacing: 0.7px;
+        line-height: 1.45;
+    }
+
+    #projects .project-number {
+        top: 12px;
+        right: 12px;
+        font-size: 2.5rem;
+    }
+
+    #projects .project-tech {
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+
+    #projects .project-tech span {
+        padding: 5px 7px;
+        font-size: 0.65rem;
+    }
+
+    #projects .project-link {
+        font-size: 0.8rem;
+    }
+}
+
+/* =========================
+   SMALL MOBILE — 480px and below
+========================= */
+
+@media (max-width: 480px) {
+
+    #projects {
+        padding: 55px 18px;
+    }
+
+    #projects .project-label {
+        font-size: 0.72rem;
+        letter-spacing: 2px;
+    }
+
+    #projects .section-title {
+        font-size: clamp(1.8rem, 7vw, 2.3rem);
+        line-height: 1.2;
+    }
+
+    #projects .projects-intro {
+        max-width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        padding: 0 2px;
+    }
+
+    #projects .portfolio-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        margin-top: 28px;
+    }
+
+    #projects .portfolio-item {
+        width: 100%;
+        aspect-ratio: auto;
+        min-height: 440px;
+        border-radius: 10px;
+    }
+
+    #projects .portfolio-image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #projects .portfolio-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 22px 18px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.98) 0%,
+            rgba(0, 0, 0, 0.87) 60%,
+            rgba(0, 0, 0, 0.2) 100%
+        );
+    }
+
+    #projects .project-number {
+        top: 14px;
+        right: 16px;
+        font-size: 2.7rem;
+    }
+
+    #projects .project-type {
+        font-size: 0.68rem;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        margin-bottom: 9px;
+    }
+
+    #projects .portfolio-overlay h3 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+    #projects .portfolio-overlay p {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 14px;
+    }
+
+    #projects .project-tech {
+        gap: 7px;
+        margin-bottom: 14px;
+    }
+
+    #projects .project-tech span {
+        padding: 6px 9px;
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
+
+    #projects .project-link {
+        font-size: 0.85rem;
+        padding-bottom: 5px;
+    }
+}
+
+/* Keyboard accessibility */
+@media (hover: none), (pointer: coarse) {
+    #projects .portfolio-overlay {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    #projects .portfolio-item,
+    #projects .portfolio-image,
+    #projects .portfolio-overlay,
+    #projects .project-link {
+        transition: none !important;
+    }
+}
+
+/* FIX: Align hero buttons properly */
+.slide-text .hero-buttons {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.slide-text .hero-buttons .cta-button,
+.slide-text .hero-buttons .resume-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    min-height: 70px;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 14px 24px;
+    line-height: 1.4;
+    vertical-align: middle;
+}
+
+.slide-text .hero-buttons .resume-btn {
+    background: #d4a574;
+    color: #0a0a0a;
+    border: 1px solid #d4a574;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.slide-text .hero-buttons .resume-btn:hover {
+    background: #0a0a0a;
+    color: #d4a574;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 480px) {
+    .slide-text .hero-buttons {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 12px;
+    }
+
+    .slide-text .hero-buttons a {
+        width: 100% !important;
+    }
+}
+
+/* Fix hero slider button clicks */
+.slide {
+    pointer-events: none;
+}
+
+.slide.active {
+    pointer-events: auto;
+}
+
+/* Make resume button clickable */
+.hero-buttons {
+    position: relative;
+    z-index: 20;
+}
+
+.hero-buttons .resume-btn {
+    position: relative;
+    z-index: 21;
+    pointer-events: auto;
+    cursor: pointer;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/* WhatsApp Contact Button */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    margin-top: 5px;
+    background: #d4a574;
+    color: #ffffff;
+    border: 1px solid #d4a574;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    border-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+.whatsapp-btn:focus-visible {
+    outline: 2px solid #128C7E;
+    outline-offset: 3px;
+}
